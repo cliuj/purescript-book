@@ -35,7 +35,7 @@ emptyBook = empty
 
 -- This line should have been automatically deleted by resetSolutions.sh. See Chapter 2 for instructions. NOTE TO MAINTAINER: If editing `insertEntry`, remember to also update the non-anchored (and unsimplified) version of this function that is hardcoded in the book text.
 insertEntry :: Entry -> AddressBook -> AddressBook
-insertEntry = Cons
+insertEntry entry book = Cons entry book
 
 -- This line should have been automatically deleted by resetSolutions.sh. See Chapter 2 for instructions. NOTE TO MAINTAINER: If editing `findEntry`, remember to also update the non-anchored (and unsimplified) version of this function that is hardcoded in the book text.
 findEntry :: String -> String -> AddressBook -> Maybe Entry
